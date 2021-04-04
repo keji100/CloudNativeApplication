@@ -16,4 +16,9 @@ public class CloudNativeAppResource implements Serializable {
 		return ResponseEntity.ok("2021/1 - Arquitetura de Software - GR16032-00008 - Kleinner Silva Farias de Oliveira");
 	}
 	
+	@GetMapping("/professor")
+	public ResponseEntity<String> getConfigs() {
+		return ResponseEntity.ok("Kleinner Silva Farias de Oliveira");
+	}
+	
 }
