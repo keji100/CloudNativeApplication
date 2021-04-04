@@ -12,12 +12,12 @@ public class CloudNativeAppResource implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@GetMapping("/")
-	public ResponseEntity<String> getConfigs() {
+	public ResponseEntity<String> home() {
 		return ResponseEntity.ok("2021/1 - Arquitetura de Software - GR16032-00008 - Kleinner Silva Farias de Oliveira");
 	}
 	
 	@GetMapping("/professor")
-	public ResponseEntity<String> getConfigs() {
+	public ResponseEntity<String> getProfessor() {
 		return ResponseEntity.ok("Kleinner Silva Farias de Oliveira");
 	}
 	
