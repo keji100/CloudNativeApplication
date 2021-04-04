@@ -34,39 +34,6 @@
         <groupId>org.springframework.boot</groupId>  
         <artifactId>spring-boot-maven-plugin</artifactId> 
       </plugin>  
-      <plugin> 
-        <groupId>com.microsoft.azure</groupId>  
-        <artifactId>azure-webapp-maven-plugin</artifactId>  
-        <version>1.9.0</version>  
-        <configuration> 
-          <schemaVersion>V2</schemaVersion>  
-          <resourceGroup>CloudNativeApp-1617570798937-rg</resourceGroup>  
-          <appName>CloudNativeApp-1617570798937</appName>  
-          <pricingTier>P1v2</pricingTier>  
-          <region>centralus</region>  
-          <runtime> 
-            <os>linux</os>  
-            <javaVersion>java11</javaVersion>  
-            <webContainer>java11</webContainer> 
-          </runtime> 
-          <appSettings>
-			<property>
-               <name>JAVA_OPTS</name>
-               <value>-Dserver.port=80</value>
-          	</property>
-		  </appSettings> 
-          <deployment> 
-            <resources> 
-              <resource> 
-                <directory>${project.basedir}/target</directory>  
-                <includes> 
-                  <include>*.jar</include> 
-                </includes> 
-              </resource> 
-            </resources> 
-          </deployment> 
-        </configuration> 
-      </plugin> 
     </plugins> 
   </build> 
 </project>
