@@ -21,8 +21,8 @@ public class CloudNativeAppResource implements Serializable {
 		return ResponseEntity.ok("Kleinner Silva Farias de Oliveira");
 	}
 	
-	@GetMapping("/teste123")
-	public ResponseEntity<String> getProfessor() {
+	@GetMapping("/alunos")
+	public ResponseEntity<String> getAlunos() {
 		return ResponseEntity.ok("Willian, Renato, Dione e Augusto");
 	}
 	
